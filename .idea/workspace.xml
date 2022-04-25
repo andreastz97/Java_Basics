@@ -10,10 +10,10 @@
       <change beforePath="$PROJECT_DIR$/exceptions/EmptyIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions/EmptyIdException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exceptions/FalseParametersException.java" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions/FalseParametersException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exceptions/UnvalidRoleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions/UnvalidRoleException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/reader/FileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/validations/EmptyID.java" beforeDir="false" afterPath="$PROJECT_DIR$/validations/EmptyID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/validations/FalseParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/validations/FalseParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validations/ValidRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/validations/ValidRole.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

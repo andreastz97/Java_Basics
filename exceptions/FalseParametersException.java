@@ -1,9 +1,11 @@
 package exceptions;
 
 public class FalseParametersException extends RuntimeException{
+
     public String message;
 
     public FalseParametersException(String message) {
+        super();
         this.message = message;
     }
 

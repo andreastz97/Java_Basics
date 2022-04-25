@@ -1,15 +1,11 @@
 package reader;
 
-import model.Employee;
-import model.Role;
-
-import javax.sound.sampled.Line;
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.*;
 
-public class ReadFile {
-    public static void Reader() {
+public class FileReader {
+    public static void read() {
         //List<String> myList = new ArrayList<String>();
         List<String> myList = new ArrayList<String>();
 

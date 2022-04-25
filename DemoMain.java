@@ -1,7 +1,7 @@
 import model.Employee;
 import model.Manager;
 import model.Seller;
-import reader.ReadFile;
+import reader.FileReader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +42,7 @@ public class DemoMain {
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Enter path of text , export format , role");
         System.out.println(M1);
-        ReadFile path = new ReadFile();
+        FileReader path = new FileReader();
 
 
                 //list stream
