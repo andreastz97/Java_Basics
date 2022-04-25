@@ -1,15 +1,19 @@
 package model;
 
 public class Manager extends Employee{
+
     int numberOfSellers;
     String country;
 
-    public Manager() {
+    public Manager(String ID,String firstName,String lastName) {
+
+        super(ID,firstName,lastName);
     }
 
-    public Manager(int numberOfSellers, String country) {
-        this.numberOfSellers = numberOfSellers;
+    public Manager(String ID,String firstName,String lastName, String country,int numberOfSellers) {
+        super(ID,firstName,lastName);
         this.country = country;
+        this.numberOfSellers = numberOfSellers;
     }
 
     public int getNumberOfSellers() {

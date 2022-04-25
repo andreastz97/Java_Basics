@@ -1,4 +1,5 @@
 import model.Employee;
+import model.Manager;
 import model.Seller;
 import reader.ReadFile;
 
@@ -16,7 +17,9 @@ public class DemoMain {
 
 //        List<String> lines = Files.readAllLines(Path.of("awd"));
         //Seller S1 = new Seller("Thess" , 15 , true);
-        //Employee E1 = new Employee("1233124" , "Andreas" , "Tzioukalias");
+        Employee E1 = new Employee("1233124" , "Andreas" , "Tzioukalias");
+        //Manager M1 = new Manager("fdsf"
+
         //Employee E2 = new Employee("" , "Andreas" , "Tzioukalias");
 
         //ToXML F1 = new ToXML();
@@ -27,7 +30,8 @@ public class DemoMain {
         //F1.begin();
         //F1.openXml();
 
-        ////Seller S1= new Seller("Thess",13,true);
+        Employee S1 = new Seller("213","fdasfsdfwe","wefwfe","Thess",13,true);
+        Employee M1 = new Manager("232","Andeas","Tzioukalias","Thess",54);
         ////ReadFile.Reader();
 
         //List <Employee>  myList =  new List<>;
@@ -37,19 +41,11 @@ public class DemoMain {
 
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Enter path of text , export format , role");
-
+        System.out.println(M1);
         ReadFile path = new ReadFile();
-        if (
 
 
-
-
-    }
-
-
-
-    }
-
-    //list stream
+                //list stream
 
     //from string to object -> parsing
+    }}
