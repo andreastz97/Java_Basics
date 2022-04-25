@@ -1,20 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0254555-8d90-4a00-aeda-11b938925626" name="Changes" comment="" />
+    <list default="true" id="a0254555-8d90-4a00-aeda-11b938925626" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader/ReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/ToXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/DemoMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exceptions/EmptyIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions/EmptyIdException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exceptions/FalseParametersException.java" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions/FalseParametersException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exceptions/UnvalidRoleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions/UnvalidRoleException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/ProductLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/ProductLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadFile/ReadTxtFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TxtToXML/ToXML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/EmptyID.java" beforeDir="false" afterPath="$PROJECT_DIR$/validations/EmptyID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/FalseParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/validations/FalseParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/ValidRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/validations/ValidRole.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="289iUC48b5DsmowtW4fJxbLsYxI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="DemoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DemoMain" />
+      <module name="MyProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DemoMain" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -25,5 +85,16 @@
       <updated>1650635218311</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
