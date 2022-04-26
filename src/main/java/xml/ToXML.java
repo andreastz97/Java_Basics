@@ -1,4 +1,4 @@
-package TxtToXml;
+package xml;
 
 import java.io.*;
 

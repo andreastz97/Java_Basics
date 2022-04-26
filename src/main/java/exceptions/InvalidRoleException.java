@@ -1,11 +1,11 @@
 package exceptions;
 
 
-public class UnvalidRoleException extends RuntimeException {
+public class InvalidRoleException extends RuntimeException {
 
     public String message;
 
-    public UnvalidRoleException(String message) {
+    public InvalidRoleException(String message) {
         super();
         this.message = message;
     }
