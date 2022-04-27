@@ -5,9 +5,10 @@ import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.*;
 
 public class FileReader {
+
     public static void read() {
         //List<String> myList = new ArrayList<String>();
-        List<String> myList = new ArrayList<String>();
+        List<String> myList = new ArrayList<>();
 
 
         try {
