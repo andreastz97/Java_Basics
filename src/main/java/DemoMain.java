@@ -4,13 +4,20 @@
 //import validations.ValidationUtil;
 //import java.util.List;
 
+import exceptions.NoArgsException;
 import validations.ValidationUtil;
+
+import java.io.File;
 
 public class DemoMain {
 
 
     public static void main(String[] args) {
         //System.out.println(args[0]);
+
+        if( args.length == 0 ) {
+            throw new NoArgsException();
+        }
       validateArgs(args);
         //FileReader fileReader = new FileReader();
        // Parser parser = new Parser();
@@ -33,10 +40,16 @@ public class DemoMain {
 
    public static void validateArgs(String[] args) {
         //call validationUtils methods
+       //if( args.length == 0 ) {
+          // System.out.println("NO ARGS BRO WHY?");
+           //System.exit(0);
+       //}
+       File path = new File(args[0]);
+
        ValidationUtil checker = new ValidationUtil();
-       checker.checkSizeOfParameters(args);
         checker.checkIfEmpty(args);
-        checker.checkFilePath(args);
+        checker.checkSizeOfParameters(args);
+        checker.checkFilePath(String.valueOf(path));
         checker.checkOutCome(args);
         checker.checkRole(args);
         checker.checkSizeOfParameters(args);

@@ -13,21 +13,18 @@ import static model.Role.SELLER;
 
 public class ValidationUtil {
 
-    public void checkFilePath(String []args) {
-        //File f = new File(filePath);
-        if (!args[0].toString().equals("sampleDemoJava.txt")){
-            throw new InvalidPathException();
-        }
+    public void checkFilePath(String filePath) {
+        File f = new File(filePath);
 
-       // if (!f.exists()){ String filePath ,
-         //   throw new InvalidPathException();
-        //}
-        // throw new InvalidPathException();
+        if (f.exists())
+            System.out.println("yparxei");
+            else
+                throw new InvalidPathException();
+
     }
 
-
     public void checkIfEmpty(String[] args) {
-        if (args[0] == null) {
+        if( args.length == 0 ) {
             throw new NoArgsException();
         }
     }
