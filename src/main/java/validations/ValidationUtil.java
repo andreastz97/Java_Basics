@@ -6,23 +6,25 @@ import model.Employee;
 import model.OutComeType;
 
 
+import java.io.File;
+
 import static model.Role.MANAGER;
 import static model.Role.SELLER;
 
 public class ValidationUtil {
 
-    public void checkFilePath(String filePath) {
-        if (filePath == ""){
+    public void checkFilePath(String []args) {
+        //File f = new File(filePath);
+        if (!args[0].toString().equals("sampleDemoJava.txt")){
             throw new InvalidPathException();
         }
+
+       // if (!f.exists()){ String filePath ,
+         //   throw new InvalidPathException();
+        //}
         // throw new InvalidPathException();
     }
-    public void checkId(Employee ID){
-        if (ID==null){
-            throw new EmptyIdException();
-            //Generate Random UUID
-        }
-    }
+
 
     public void checkIfEmpty(String[] args) {
         if (args[0] == null) {
@@ -31,7 +33,7 @@ public class ValidationUtil {
     }
 
     public void checkSizeOfParameters(String[] args) {
-        if (args.length != 2)
+        if (args.length > 3)
             throw new FalseParametersException();
     }
 
