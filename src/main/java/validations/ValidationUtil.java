@@ -13,7 +13,7 @@ import static model.Role.SELLER;
 
 public class ValidationUtil {
 
-    public void checkFilePath(String filePath) {
+    public static void checkFilePath(String filePath) {
         File f = new File(filePath);
 
         if (f.exists())
@@ -23,18 +23,18 @@ public class ValidationUtil {
 
     }
 
-    public void checkIfEmpty(String[] args) {
+    public static void checkIfEmpty(String[] args) {
         if( args.length == 0 ) {
             throw new NoArgsException();
         }
     }
 
-    public void checkSizeOfParameters(String[] args) {
+    public static void checkSizeOfParameters(String[] args) {
         if (args.length > 3)
             throw new FalseParametersException();
     }
 
-    public void checkRole(String[] args) {
+    public static void checkRole(String[] args) {
         String role = args[1];
 
         if (!role.equals(SELLER.name()) && !role.equals(MANAGER.name())) {
@@ -44,7 +44,7 @@ public class ValidationUtil {
     }
 
 
-    public void checkOutCome(String[] args) {
+    public static void checkOutCome(String[] args) {
         String outcome = args[2];
 
         if ((!outcome.equals("XSL")) && (!args[2].equals("XML")) && (!args[2].equals("JSON"))) {
