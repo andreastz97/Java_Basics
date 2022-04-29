@@ -13,6 +13,7 @@ public class DemoMain {
 
 
     public static void main(String[] args) {
+        //test
         //System.out.println(args[0]);
 
         if( args.length == 0 ) {
