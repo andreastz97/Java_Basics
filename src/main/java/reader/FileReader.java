@@ -1,39 +1,27 @@
 package reader;
 
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
+import model.Employee;
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class FileReader {
 
-    public static void read() {
+    public void read(String filePath) {
         //List<String> myList = new ArrayList<String>();
-        List<String> myList = new ArrayList<>();
-
+        List<Employee> myList = new ArrayList();
 
         try {
-            File myObj = new File("C:\\Users\\andre\\IdeaProjects\\MyProject\\target\\classes\\sampleDemoJava.txt");
-            Scanner myReader = new Scanner(myObj);
-
-
-            while (myReader.hasNextLine()) {
-
-                String data = myReader.nextLine();
-                myList.add(data);
-                for (int i = 0; i < myList.size(); i++) {
-
-                }
-
-
-
-
-                System.out.println(data);
-            }
-            myReader.close();
-            System.out.println(myList);
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
+            List<String> lines = Files.readAllLines( Path.of(filePath), StandardCharsets.UTF_8);
+            lines.stream().forEach(System.out::println);
+        } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
 }

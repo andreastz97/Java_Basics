@@ -1,13 +1,7 @@
-//import model.Employee;
-//import parser.Parser;
-//import reader.FileReader;
-//import validations.ValidationUtil;
-//import java.util.List;
 
-import exceptions.NoArgsException;
-import validations.ValidationUtil;
 
-import java.io.File;
+import reader.FileReader;
+
 
 import static validations.ValidationUtil.*;
 
@@ -15,40 +9,26 @@ public class DemoMain {
 
 
     public static void main(String[] args) {
-        //test
-        //System.out.println(args[0]);
+
+        String filePath = args[0];
+        String role = args[1];
+        String exportFormat = args[2];
 
 
-        validateArgs(args);
-        //FileReader fileReader = new FileReader();
-        // Parser parser = new Parser();
-        System.out.println("OLA KALA");
-
+        validateArgs(filePath, role, exportFormat, args);
         //validate args
-
-
-//        List<String> lines = fileReader.read();
-
-        //1,George,Kokkinou
-//        List<Employee> employees = parser.parse(lines);
-
-
+        FileReader fileReader = new FileReader();
+        fileReader.read(filePath);
+        //        List<Employee> employees = parser.parse(lines);
     }
 
-    public static void validateArgs(String[] args) {
-        //call validationUtils methods
-        //if( args.length == 0 ) {
-        // System.out.println("NO ARGS BRO WHY?");
-        //System.exit(0);
-        //}
-        File path = new File(args[0]);
+    public static void validateArgs(String filePath, String role, String exportFormat, String[] args) {
 
-        //ValidationUtil checker = new ValidationUtil();
         checkIfEmpty(args);
         checkSizeOfParameters(args);
-        checkFilePath(String.valueOf(path));
-        checkOutCome(args);
-        checkRole(args);
-        checkSizeOfParameters(args);
+
+        checkFilePath(filePath);
+        checkOutCome(exportFormat);
+        checkRole(role);
     }
 }

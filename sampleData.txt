@@ -1,0 +1,5 @@
+1,Andreas,Andreou,MANAGER,10,Greece,,,,
+2,Maria,Marias,MANAGER,17,Germany,,,,
+,Andreas,Andreou,SELLER,,,LINE_A,Thessaloniki,20.4,TRUE
+,Petros,Petrou,SELLER,,,LINE_A,Volos,44.4,TRUE
+5,Giannis,Giannou,SELLER,,,LINE_B,Thessaloniki,9.32,FALSE

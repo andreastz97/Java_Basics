@@ -1,3 +1,0 @@
-"1","Andreas","Andreou",Manager,"Thessaloniki",15,"Greece",
-"2","Nikos","Nikou",Seller,LINE_A,"Athens",20,True,
-"34","Nikolaos","Nikourilifis",Seller,LINE_B,"Patra",145,False,

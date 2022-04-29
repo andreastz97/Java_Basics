@@ -5,37 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0254555-8d90-4a00-aeda-11b938925626" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DemoMain.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DemoMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/FalseParametersException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/FalseParametersException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidOutComeException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidOutComeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidPathException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidPathException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidRoleException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidRoleException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/NoArgsException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/NoArgsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Employee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/OutComeType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/OutComeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/ProductLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Seller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reader/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sampleDemoJava.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/validations/ValidationUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/validations/ValidationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xml/ToXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f518e8563cb3d550ded08891afc24f2d76a38945" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce032902dd97a77141ad6c89144037d51129e248" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sampleData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/main/java" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,24 +38,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/andre/OneDrive/java-basics",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\OneDrive\java-basics" />
+      <recent name="C:\Users\andre\OneDrive\java-basics\src\main\java" />
+      <recent name="C:\Users\andre\OneDrive\java-basics\src\main\resources" />
+      <recent name="C:\Users\andre\OneDrive\java-basics\src\main\java\validations" />
       <recent name="C:\Users\andre\IdeaProjects\MyProject\src\main\java" />
-      <recent name="C:\Users\andre\IdeaProjects\MyProject\src\main" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="DemoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="DemoMain" />
-      <module name="MyProject" />
+      <module name="java-basics" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;sampleData.txt&quot; SELLER XML" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
