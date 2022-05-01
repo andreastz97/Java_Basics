@@ -1,7 +1,11 @@
 
 
+import model.Employee;
+import model.Manager;
+import model.Role;
+import model.Seller;
+import parser.EmployeeParser;
 import reader.FileReader;
-
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,12 +22,25 @@ public class DemoMain {
         String role = args[1];
         String exportFormat = args[2];
 
-
         validateArgs(filePath, role, exportFormat, args);
         //validate args
         FileReader fileReader = new FileReader();
-        List<String> finalList = fileReader.read(filePath);
-        //        List<Employee> employees = parser.parse(lines);
+
+        List<String> lines = fileReader.read(filePath);
+        EmployeeParser parser = new EmployeeParser();
+
+
+       List<Seller> sellers= new ArrayList<>();
+       List<Manager> managers = new ArrayList<>();
+
+       sellers = parser.parseSeller(lines);
+       managers = parser.parseManager(lines);
+        System.out.println(sellers);
+
+
+
+
+
     }
     //
 
@@ -31,7 +48,6 @@ public class DemoMain {
 
         checkIfEmpty(args);
         checkSizeOfParameters(args);
-
         checkFilePath(filePath);
         checkOutCome(exportFormat);
         checkRole(role);

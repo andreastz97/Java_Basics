@@ -5,13 +5,13 @@ public class Manager extends Employee {
     int numberOfSellers;
     String country;
 
-    public Manager(String ID, String firstName, String lastName) {
+    public Manager(String id, String firstName, String lastName) {
 
-        super(ID, firstName, lastName);
+        super(id, firstName, lastName);
     }
 
-    public Manager(String ID, String firstName, String lastName, String country, int numberOfSellers) {
-        super(ID, firstName, lastName);
+    public Manager(String id, String firstName, String lastName, String country, int numberOfSellers) {
+        super(id, firstName, lastName);
         this.country = country;
         this.numberOfSellers = numberOfSellers;
     }
@@ -30,5 +30,13 @@ public class Manager extends Employee {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                " numberOfSellers = " + numberOfSellers + + '\'' +
+                ", country = '" + country + '\n'
+                ;
     }
 }

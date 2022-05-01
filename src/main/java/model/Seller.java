@@ -5,8 +5,10 @@ public class Seller extends Employee {
     double averageSales;
     boolean active;
 
+    public Seller() {
+    }
 
-    public Seller(String ID,String firstName , String lastName,String city, double averageSales, boolean active) {
+    public Seller(String ID, String firstName , String lastName, String city, double averageSales, boolean active) {
         super(ID,firstName,lastName);
         this.city = city;
         this.averageSales = averageSales;
@@ -36,6 +38,15 @@ public class Seller extends Employee {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()  +
+                "city = ' " + city + '\'' +
+                ", averageSales = " + averageSales + '\'' +
+                ", active = " + active + '\n'
+                ;
     }
 }
 

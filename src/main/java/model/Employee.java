@@ -1,25 +1,25 @@
 package model;
 
 public class Employee {
-    private String ID;
-    private String firstName ;
-    private String lastName ;
+    private String id;
+    private String firstName;
+    private String lastName;
 
     public Employee() {
     }
 
-    public Employee(String ID, String firstName, String lastName) {
-        this.ID = ID;
+    public Employee(String Id, String firstName, String lastName) {
+        this.id = Id;
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public String getID() {
-        return ID;
+    public String getId() {
+        return id;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -36,5 +36,13 @@ public class Employee {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "id = ' " + id + '\'' +
+                        ", firstName = ' " + firstName + '\'' +
+                        ", lastName = ' " + lastName + '\'';
     }
 }
