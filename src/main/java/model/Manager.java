@@ -10,10 +10,11 @@ public class Manager extends Employee {
         super(id, firstName, lastName);
     }
 
-    public Manager(String id, String firstName, String lastName, String country, int numberOfSellers) {
+    public Manager(String id, String firstName, String lastName,int numberOfSellers,String country) {
         super(id, firstName, lastName);
-        this.country = country;
         this.numberOfSellers = numberOfSellers;
+        this.country = country;
+
     }
 
     public int getNumberOfSellers() {

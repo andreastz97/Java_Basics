@@ -16,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,11 +52,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\andre\OneDrive\java-basics" />
       <recent name="C:\Users\andre\OneDrive\java-basics\src\main\java" />
+      <recent name="C:\Users\andre\OneDrive\java-basics\src\main" />
+      <recent name="C:\Users\andre\OneDrive\java-basics" />
       <recent name="C:\Users\andre\OneDrive\java-basics\src\main\resources" />
       <recent name="C:\Users\andre\OneDrive\java-basics\src\main\java\validations" />
-      <recent name="C:\Users\andre\IdeaProjects\MyProject\src\main\java" />
     </key>
   </component>
   <component name="RunManager">
@@ -65,7 +65,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="DemoMain" />
       <module name="java-basics" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;sampleData.txt&quot; SELLER XML" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;sampleData.txt&quot; MANAGER XML" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,13 +103,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/parser/EmployeeParser.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="33" />
+          <line>45</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/parser/EmployeeParser.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="43" />
+          <line>67</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

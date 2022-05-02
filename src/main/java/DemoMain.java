@@ -30,12 +30,8 @@ public class DemoMain {
         EmployeeParser parser = new EmployeeParser();
 
 
-       List<Seller> sellers= new ArrayList<>();
-       List<Manager> managers = new ArrayList<>();
 
-       sellers = parser.parseSeller(lines);
-       managers = parser.parseManager(lines);
-        System.out.println(sellers);
+        parser.parse(lines, Role.valueOf(role.toString()));
 
 
 
