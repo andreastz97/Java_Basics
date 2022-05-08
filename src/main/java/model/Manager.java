@@ -10,7 +10,7 @@ public class Manager extends Employee {
         super(id, firstName, lastName);
     }
 
-    public Manager(String id, String firstName, String lastName,int numberOfSellers,String country) {
+    public Manager(String id, String firstName, String lastName, int numberOfSellers, String country) {
         super(id, firstName, lastName);
         this.numberOfSellers = numberOfSellers;
         this.country = country;
@@ -36,7 +36,7 @@ public class Manager extends Employee {
     @Override
     public String toString() {
         return super.toString() +
-                " numberOfSellers = " + numberOfSellers + + '\'' +
+                " numberOfSellers = " + numberOfSellers + +'\'' +
                 ", country = '" + country + '\n'
                 ;
     }

@@ -1,6 +1,9 @@
 package model;
+import java.util.List;
 
 public class Employee {
+
+
     private String id;
     private String firstName;
     private String lastName;
@@ -8,8 +11,8 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String Id, String firstName, String lastName) {
-        this.id = Id;
+    public Employee(String id, String firstName, String lastName) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -45,4 +48,8 @@ public class Employee {
                         ", firstName = ' " + firstName + '\'' +
                         ", lastName = ' " + lastName + '\'';
     }
+    public List<Employee> getList(List<Employee> employees){
+        return employees;
+    }
+
 }

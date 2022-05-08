@@ -1,72 +1,52 @@
 package parser;
 
-import model.Employee;
-import model.Manager;
-import model.Role;
-import model.Seller;
+import model.*;
 
 import java.util.ArrayList;
-import java.util.EnumMap;
 import java.util.List;
-
-import static java.lang.Boolean.parseBoolean;
-import static java.lang.Double.parseDouble;
-import static java.lang.Integer.parseInt;
+import java.util.UUID;
 
 public class EmployeeParser {
 
-      public List<Employee> parse(List<String> lines, Role role) {
-          List<Employee> listOfEmployee = new ArrayList<>();
-        if (role == Role.SELLER){
+    public static final String COMMA = ",";
+
+    public List<Employee> parse(List<String> lines, Role role) {
+        List<Employee> listOfEmployee = new ArrayList<>();
+
+        if (role == Role.SELLER) {
             listOfEmployee = parseSeller(lines);
-        }
-        if (role == Role.MANAGER){
+        } else if (role == Role.MANAGER) {
             listOfEmployee = parseManager(lines);
         }
-    return listOfEmployee;
-        //parseManager(lines);
-        //parseSeller(lines);
-    }
 
+        return listOfEmployee;
+    }
 
     public List<Employee> parseManager(List<String> lines) {
         List<Employee> listOfManagers = new ArrayList<>();
-
-
         for (String line : lines) {
-            String[] arrayStrings = line.split(",");
-            if (arrayStrings[3].equals("MANAGER")){
-            listOfManagers.add(new Manager(arrayStrings[0], arrayStrings[1], arrayStrings[2]  , Integer.parseInt(arrayStrings[4]),arrayStrings[5])); /*arrayStrings[5],Integer.parseInt(arrayStrings[4])*/;
-
+            String[] arrayStringsManagers = line.split(COMMA);
+            if (arrayStringsManagers[3].equals(Role.MANAGER.toString())) {
+                if (arrayStringsManagers[0].isEmpty()){
+                    arrayStringsManagers[0] = UUID.randomUUID().toString();
+                }
+                listOfManagers.add(new Manager(arrayStringsManagers[0], arrayStringsManagers[1], arrayStringsManagers[2], Integer.parseInt(arrayStringsManagers[4]), arrayStringsManagers[5])); /*arrayStringsManagers[5],Integer.parseInt(arrayStringsManagers[4])*/;
+            }
         }
-        }
-
-
-
         return listOfManagers;
-
     }
-
-
     public List<Employee> parseSeller(List<String> lines) {
-
-       List<Employee> listOfSellers =new ArrayList<>();
-
-       //List<Seller> listOfSellers  = (List<Seller>) new Employee();
+        List<Employee> listOfSellers = new ArrayList<>();
         for (String line : lines) {
             String[] arrayStringsSellers;
-            arrayStringsSellers = line.split(",");
-            if (arrayStringsSellers[3].equals("SELLER")){
-
-            listOfSellers.add(new Seller(arrayStringsSellers[0], arrayStringsSellers[1], arrayStringsSellers[2],arrayStringsSellers[3],Double.parseDouble(arrayStringsSellers[8]),  Boolean.parseBoolean(arrayStringsSellers[9]) ));
-
-            }}
-
-
-
-
+            arrayStringsSellers = line.split(COMMA);
+            if (arrayStringsSellers[3].equals(Role.SELLER.toString())) {
+                if (arrayStringsSellers[0].isEmpty()) {
+                    arrayStringsSellers[0] = UUID.randomUUID().toString();
+                }
+                listOfSellers.add(new Seller(arrayStringsSellers[0], arrayStringsSellers[1], arrayStringsSellers[2], arrayStringsSellers[3], Double.parseDouble(arrayStringsSellers[8]), Boolean.parseBoolean(arrayStringsSellers[9])));
+            }
+        }
         return listOfSellers;
     }
-
-
 }

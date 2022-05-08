@@ -2,6 +2,7 @@ package validations;
 
 
 import exceptions.*;
+import model.OutComeType;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,9 +11,7 @@ import static model.Role.MANAGER;
 import static model.Role.SELLER;
 
 public class ValidationUtil {
-
     public static void checkFilePath(String filePath) {
-
         if (!Files.exists(Path.of(filePath))) {
             throw new InvalidPathException();
         }
@@ -25,8 +24,9 @@ public class ValidationUtil {
     }
 
     public static void checkSizeOfParameters(String[] args) {
-        if (args.length > 3)
+        if (args.length > 3) {
             throw new FalseParametersException();
+        }
     }
 
     public static void checkRole(String role) {
@@ -37,14 +37,10 @@ public class ValidationUtil {
 
     }
 
-
-    public static void checkOutCome(String exportFormat) {
-
-        //todo use enum for checks
-        if ((!exportFormat.equals("XSL"))  && (!exportFormat.equals("XML")) && (!exportFormat.equals("JSON"))) {
+    public static void checkOutCome(OutComeType exportFormat) {
+        if ((exportFormat != OutComeType.XSL) && (exportFormat != OutComeType.XML) && (exportFormat != OutComeType.JSON)) {
             //convert to enum
             throw new InvalidOutComeException();
-
         }
     }
 }
