@@ -19,11 +19,9 @@ public class DemoMain {
     public static void main(String[] args) throws IOException {
         String filePath = args[0];
         String role = args[1];
-        String exportFormat = args[2];
-        OutComeType outComeType = OutComeType.valueOf(exportFormat);
-        //todo merge lns 20-21
+        OutComeType outComeType = OutComeType.valueOf(args[2]);
 
-        validateArgs(filePath, role, OutComeType.valueOf(exportFormat), args);
+        validateArgs(filePath, role, outComeType, args);
         List<String> lines = fileReader.read(filePath);
 
         List<Employee> employeesList = parser.parse(lines, Role.valueOf(role));
