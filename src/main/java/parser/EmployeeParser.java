@@ -38,8 +38,7 @@ public class EmployeeParser {
     public List<Employee> parseSeller(List<String> lines) {
         List<Employee> listOfSellers = new ArrayList<>();
         for (String line : lines) {
-            String[] arrayStringsSellers;
-            arrayStringsSellers = line.split(COMMA);
+            String[] arrayStringsSellers = line.split(COMMA);
             if (arrayStringsSellers[3].equals(Role.SELLER.toString())) {
                 if (arrayStringsSellers[0].isEmpty()) {
                     arrayStringsSellers[0] = UUID.randomUUID().toString();

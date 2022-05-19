@@ -38,7 +38,7 @@ public class ValidationUtil {
     }
 
     public static void checkOutCome(OutComeType exportFormat) {
-        if ((exportFormat != OutComeType.XSL) && (exportFormat != OutComeType.XML) && (exportFormat != OutComeType.JSON)) {
+        if ((exportFormat != OutComeType.XLS) && (exportFormat != OutComeType.XML) && (exportFormat != OutComeType.JSON)) {
             //convert to enum
             throw new InvalidOutComeException();
         }

@@ -10,8 +10,9 @@ import java.io.File;
 import java.util.List;
 
 public class XmlExporter implements Exporter {
-
+        private static final String FILEPATH = "role.xml";
     public void export(List<Employee> employees) {
+
         try {
             // create an instance of `JAXBContext`
             JAXBContext context = JAXBContext.newInstance(Employees.class);
@@ -23,7 +24,8 @@ public class XmlExporter implements Exporter {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
             // create XML file
-            File file = new File("role.xml");
+            //todo remove magic string
+            File file = new File(FILEPATH);
 
             // create  object
             Employees wrapperEmployee = new Employees();

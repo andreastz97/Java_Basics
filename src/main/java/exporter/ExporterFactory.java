@@ -10,7 +10,7 @@ public class ExporterFactory {
         if (outComeType == OutComeType.XML) {
             return new XmlExporter();
         }
-        if (outComeType == OutComeType.XSL) {
+        if (outComeType == OutComeType.XLS) {
             return new XlsExporter();
         }
         if (outComeType == OutComeType.JSON) {

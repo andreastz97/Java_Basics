@@ -1,4 +1,6 @@
 package model;
+import org.apache.poi.ss.usermodel.CellStyle;
+
 import java.util.List;
 
 public class Employee {
@@ -17,9 +19,7 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public String getId() {
-        return id;
-    }
+    public String getId() {return id;}
 
     public void setId(String id) {
         this.id = id;

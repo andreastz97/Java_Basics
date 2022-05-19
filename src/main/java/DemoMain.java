@@ -12,6 +12,7 @@ import java.util.List;
 import static validations.ValidationUtil.*;
 
 public class DemoMain {
+    //todo make final
     private static FileReader fileReader = new FileReader();
     private static EmployeeParser parser = new EmployeeParser();
     private static ExporterFactory exporter = new ExporterFactory();
@@ -31,7 +32,6 @@ public class DemoMain {
         exporter1.export(employeesList);
     }
 
-    // 700 + 120 coupons + 30 internet
     public static void validateArgs(String filePath, String role, OutComeType exportFormat, String[] args) {
         checkIfEmpty(args);
         checkSizeOfParameters(args);
