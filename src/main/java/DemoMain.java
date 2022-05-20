@@ -26,7 +26,8 @@ public class DemoMain {
         List<String> lines = fileReader.read(filePath);
 
         List<Employee> employeesList = parser.parse(lines, Role.valueOf(role));
-
+        
+        //todo rename
         Exporter exporter1 = exporter.getExporter(outComeType);
 
         exporter1.export(employeesList);

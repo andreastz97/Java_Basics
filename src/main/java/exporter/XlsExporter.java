@@ -13,6 +13,7 @@ public class XlsExporter implements Exporter {
             Workbook workbook = new XSSFWorkbook();
             Sheet sheet = workbook.createSheet("Employees");
 
+
             String[] columnHeadings = {"ID", "First Name", "Last Name", "Number Of Sellers", "Country"};
             Font headerFont = workbook.createFont();
             headerFont.setBoldweight((short) 12);
@@ -38,10 +39,12 @@ public class XlsExporter implements Exporter {
                 row1.createCell(1).setCellValue(employees.get(i).getFirstName());
                 row1.createCell(1).setCellValue(employees.get(i).getLastName());
 
-                FileOutputStream fileOutput = new FileOutputStream("NewFile2.xls");
-                workbook.write(fileOutput);
-                fileOutput.close();
             }
+
+            FileOutputStream fileOutput = new FileOutputStream("NewFile2.xls");
+            workbook.write(fileOutput);
+            fileOutput.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
