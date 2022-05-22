@@ -12,10 +12,9 @@ import java.util.List;
 import static validations.ValidationUtil.*;
 
 public class DemoMain {
-    //todo make final
-    private static FileReader fileReader = new FileReader();
-    private static EmployeeParser parser = new EmployeeParser();
-    private static ExporterFactory exporter = new ExporterFactory();
+    private static final FileReader FILE_READER = new FileReader();
+    private static final EmployeeParser PARSER = new EmployeeParser();
+    private static final ExporterFactory EXPORTER = new ExporterFactory();
 
     public static void main(String[] args) throws IOException {
         String filePath = args[0];
@@ -23,12 +22,12 @@ public class DemoMain {
         OutComeType outComeType = OutComeType.valueOf(args[2]);
 
         validateArgs(filePath, role, outComeType, args);
-        List<String> lines = fileReader.read(filePath);
+        List<String> lines = FILE_READER.read(filePath);
 
-        List<Employee> employeesList = parser.parse(lines, Role.valueOf(role));
+        List<Employee> employeesList = PARSER.parse(lines, Role.valueOf(role));
         
         //todo rename
-        Exporter exporter1 = exporter.getExporter(outComeType);
+        Exporter exporter1 = EXPORTER.getExporter(outComeType);
 
         exporter1.export(employeesList);
     }
