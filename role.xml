@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<employees>
-    <employee>
+<sellers>
+    <seller>
         <firstName>Andreas</firstName>
-        <id>1</id>
+        <id>065a03f8-b0e8-4748-8b60-224bf545e362</id>
         <lastName>Andreou</lastName>
-    </employee>
-    <employee>
-        <firstName>Maria</firstName>
-        <id>2</id>
-        <lastName>Marias</lastName>
-    </employee>
-</employees>
+        <active>true</active>
+        <averageSales>20.4</averageSales>
+        <city>Thessaloniki</city>
+    </seller>
+    <seller>
+        <firstName>Petros</firstName>
+        <id>8dfc9f43-5ee0-4e55-aa55-ae7979cccdad</id>
+        <lastName>Petrou</lastName>
+        <active>true</active>
+        <averageSales>44.4</averageSales>
+        <city>Volos</city>
+    </seller>
+    <seller>
+        <firstName>Giannis</firstName>
+        <id>5</id>
+        <lastName>Giannou</lastName>
+        <active>false</active>
+        <averageSales>9.32</averageSales>
+        <city>Thessaloniki</city>
+    </seller>
+</sellers>

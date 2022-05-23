@@ -43,7 +43,7 @@ public class EmployeeParser {
                 if (arrayStringsSellers[0].isEmpty()) {
                     arrayStringsSellers[0] = UUID.randomUUID().toString();
                 }
-                listOfSellers.add(new Seller(arrayStringsSellers[0], arrayStringsSellers[1], arrayStringsSellers[2], arrayStringsSellers[3], Double.parseDouble(arrayStringsSellers[8]), Boolean.parseBoolean(arrayStringsSellers[9])));
+                listOfSellers.add(new Seller(arrayStringsSellers[0], arrayStringsSellers[1], arrayStringsSellers[2], arrayStringsSellers[7], Double.parseDouble(arrayStringsSellers[8]), Boolean.parseBoolean(arrayStringsSellers[9])));
             }
         }
         return listOfSellers;

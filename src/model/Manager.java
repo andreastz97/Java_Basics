@@ -1,5 +1,7 @@
 package model;
 
+import java.util.List;
+
 public class Manager extends Employee {
 
     int numberOfSellers;
@@ -39,5 +41,8 @@ public class Manager extends Employee {
                 " numberOfSellers = " + numberOfSellers + +'\'' +
                 ", country = '" + country + '\n'
                 ;
+    }
+    public List<Manager> getListManagers(List<Manager> managers){
+        return managers;
     }
 }

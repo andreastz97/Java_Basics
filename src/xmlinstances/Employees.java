@@ -1,4 +1,6 @@
-package model;
+package xmlinstances;
+
+import model.Employee;
 
 import javax.xml.bind.annotation.*;
 import java.util.ArrayList;

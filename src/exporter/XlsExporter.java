@@ -24,6 +24,13 @@ public class XlsExporter implements Exporter {
                 Workbook workbook = new XSSFWorkbook();
                 Sheet sheet = workbook.createSheet("Employees");
 
+                sheet.setColumnWidth(0, 3000);
+                sheet.setColumnWidth(1, 4500);
+                sheet.setColumnWidth(2, 4500);
+                sheet.setColumnWidth(3, 6000);
+                sheet.setColumnWidth(4, 4500);
+                sheet.setColumnWidth(5, 4500);
+
                 String[] columnHeadings = {"ID", "First Name", "Last Name", "Number Of Sellers", "Country"};
                 Font headerFont = workbook.createFont();
                 headerFont.setBoldweight((short) 12);
@@ -63,6 +70,13 @@ public class XlsExporter implements Exporter {
             try {
                 Workbook workbook = new XSSFWorkbook();
                 Sheet sheet = workbook.createSheet("Employees");
+
+                sheet.setColumnWidth(0, 7000);
+                sheet.setColumnWidth(1, 4500);
+                sheet.setColumnWidth(2, 4500);
+                sheet.setColumnWidth(3, 6000);
+                sheet.setColumnWidth(4, 4500);
+                sheet.setColumnWidth(5, 4500);
 
                 String[] columnHeadings = {"ID", "First Name", "Last Name", "City", "Average Sales", "Active"};
                 Font headerFont = workbook.createFont();
