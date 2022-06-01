@@ -15,9 +15,3 @@ N
 role.xml,0\b\0be3105d16552a385bfec4d9830528eb561de8df
 E
 src/model/Seller.java,8\2\82c7c0ab4a2cfe4f398331eec3db421144894492
-b
-2src/xlspackage/cellfillers/CellFillerManagers.java,7\c\7ceadb2e222618c0fb0859914d6c085a2dfe657e
-a
-1src/xlspackage/cellfillers/CellFillerSellers.java,1\8\1848c8b54717c3c014ebd57f6d1ea28014fd15ab
-Y
-)src/xlspackage/design/OutputDesigner.java,8\8\88c980ac45fb2daa78d57d0297cf9d579769c946

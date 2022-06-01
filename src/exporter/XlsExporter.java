@@ -25,10 +25,10 @@ public class XlsExporter implements Exporter {
         Sheet sheet = workbook.createSheet(SHEET_NAME);
         OutputDesigner design = new OutputDesigner();
         HeadFontDesigner headerStyle = new HeadFontDesigner();
+        design.design(sheet);
 
         if (!employees.isEmpty() && employees.get(0) instanceof Manager)
             try (FileOutputStream fileOutput = new FileOutputStream(FILE_PATH)) {
-                design.design(sheet);
                 headerStyle.headDesign(COLUMN_HEADINGS_MANAGERS, sheet);
                 CellFillerManagers cellFillerManagers = new CellFillerManagers();
                 cellFillerManagers.fillCells(employees, sheet);
@@ -36,7 +36,6 @@ public class XlsExporter implements Exporter {
             }
         if (!employees.isEmpty() && employees.get(0) instanceof Seller) {
             try (FileOutputStream fileOutput = new FileOutputStream(FILE_PATH)) {
-                design.design(sheet);
                 headerStyle.headDesign(COLUMN_HEADINGS_SELLERS, sheet);
                 CellFillerSellers cellFillerSellers = new CellFillerSellers();
                 cellFillerSellers.fillCells(employees, sheet);

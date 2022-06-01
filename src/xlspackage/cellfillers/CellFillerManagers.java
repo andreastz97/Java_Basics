@@ -1,21 +1,23 @@
 package xlspackage.cellfillers;
 
+import model.Employee;
 import model.Manager;
+import model.Seller;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 
 import java.util.ArrayList;
+import java.util.EnumMap;
 import java.util.List;
 
 public class CellFillerManagers {
     List<Manager> managers = new ArrayList<>();
     private int rownum = 0;
-    public void fillCells(List employees, Sheet sheet) {
-        for (Object manager : employees) {
-            managers.add((Manager) manager);
-        }
-        for (Manager manager : managers
+
+    public void fillCells(List<Employee> employees, Sheet sheet) {
+        for (Employee employee : employees
         ) {
+            Manager manager = (Manager) employee;
             Row row1 = sheet.createRow(++rownum);
             row1.createCell(0).setCellValue(manager.getId());
             row1.createCell(1).setCellValue(manager.getFirstName());

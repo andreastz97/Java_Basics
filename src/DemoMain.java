@@ -25,13 +25,9 @@ public class DemoMain {
         List<String> lines = FILE_READER.read(filePath);
 
         List<Employee> employeesList = PARSER.parse(lines, Role.valueOf(role));
-        
-        //todo rename
-        Exporter exporter1 = EXPORTER.getExporter(outComeType);
-
-        exporter1.export(employeesList);
+        Exporter exporter = EXPORTER.getExporter(outComeType);
+        exporter.export(employeesList);
     }
-
     public static void validateArgs(String filePath, String role, OutComeType exportFormat, String[] args) {
         checkIfEmpty(args);
         checkSizeOfParameters(args);
