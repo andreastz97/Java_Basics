@@ -9,20 +9,12 @@ import java.util.List;
 
 public class JsonExporter implements Exporter {
     private static final String FILEPATH = "JSONFILE.json";
-
     @Override
-    public void export(List<Employee> employees) {
+    public void export(List<Employee> employees)  throws IOException {
         String json = new Gson().toJson(employees);
-        //todo try with resources
-
         try (FileWriter file = new FileWriter(FILEPATH);) {
             file.write(json);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
-
-        System.out.println("JSON file created: " + json);
-
     }
 }
 

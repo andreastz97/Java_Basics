@@ -9,12 +9,11 @@ import java.util.List;
 
 public class CellFillerManagers {
     List<Manager> managers = new ArrayList<>();
-
+    private int rownum = 0;
     public void fillCells(List employees, Sheet sheet) {
         for (Object manager : employees) {
             managers.add((Manager) manager);
         }
-        int rownum = 0;
         for (Manager manager : managers
         ) {
             Row row1 = sheet.createRow(++rownum);

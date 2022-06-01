@@ -7,8 +7,6 @@ public class Seller extends Employee {
 
     public Seller() {
     }
-
-    //todo rename id
     public Seller(String id, String firstName , String lastName, String city, double averageSales, boolean active) {
         super(id,firstName,lastName);
         this.city = city;

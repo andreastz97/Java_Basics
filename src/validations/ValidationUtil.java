@@ -16,19 +16,16 @@ public class ValidationUtil {
             throw new InvalidPathException();
         }
     }
-
     public static void checkIfEmpty(String[] args) {
         if (args.length == 0) {
             throw new NoArgsException();
         }
     }
-
     public static void checkSizeOfParameters(String[] args) {
         if (args.length > 3) {
             throw new FalseParametersException();
         }
     }
-
     public static void checkRole(String role) {
 
         if (!role.equals(SELLER.name()) && !role.equals(MANAGER.name())) {
@@ -36,7 +33,6 @@ public class ValidationUtil {
         }
 
     }
-
     public static void checkOutCome(OutComeType exportFormat) {
         if ((exportFormat != OutComeType.XLS) && (exportFormat != OutComeType.XML) && (exportFormat != OutComeType.JSON)) {
             //convert to enum

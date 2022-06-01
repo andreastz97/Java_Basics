@@ -8,13 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CellFillerSellers {
+    private int rownum = 0;
     public void fillCells(List employees, Sheet sheet) {
         List<Seller> sellers = new ArrayList<>();
         for (Object seller : employees
         ) {
             sellers.add((Seller) seller);
         }
-        int rownum = 0;
+
         for (Seller seller : sellers
         ) {
             Row row1 = sheet.createRow(++rownum);

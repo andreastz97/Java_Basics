@@ -8,16 +8,16 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class XmlExporter implements Exporter {
     private static final String FILEPATH = "role.xml";
 
-    public void export(List<Employee> employees) {
+    public void export(List<Employee> employees) throws IOException {
         List<Manager> managers = new ArrayList<>();
         List<Seller> sellers = new ArrayList<>();
-
         if (!employees.isEmpty() && employees.get(0) instanceof Manager) {
             for (Employee employee : employees
             ) {

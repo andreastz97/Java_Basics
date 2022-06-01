@@ -3,7 +3,7 @@ package xlspackage.design;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class HeadFontDesign {
+public class HeadFontDesigner {
     Workbook workbook = new XSSFWorkbook();
 
     public void headDesign(String[] array, Sheet sheet) {

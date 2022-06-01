@@ -4,9 +4,7 @@ package exporter;
 import model.OutComeType;
 
 public class ExporterFactory {
-
     public Exporter getExporter(OutComeType outComeType) {
-
         if (outComeType == OutComeType.XML) {
             return new XmlExporter();
         }
@@ -18,7 +16,6 @@ public class ExporterFactory {
         }
         return null;
     }
-
 }
 
 
