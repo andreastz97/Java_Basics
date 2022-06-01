@@ -16,15 +16,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class XlsExporter implements Exporter {
+    private static final String[] columnHeadingsManagers = {"ID", "First Name", "Last Name", "Number Of Sellers", "Country"};
+    private static final String[] columnHeadingsSellers = {"ID", "First Name", "Last Name", "City", "Average Sales", "Active"};
+    Workbook workbook = new XSSFWorkbook();
+    Sheet sheet = workbook.createSheet("Employees");
+    OutputDesigner design = new OutputDesigner();
+    HeadFontDesigner headerStyle = new HeadFontDesigner();
 
     public void export(List<Employee> employees) throws IOException {
-        Workbook workbook = new XSSFWorkbook();
-        Sheet sheet = workbook.createSheet("Employees");
-        OutputDesigner design = new OutputDesigner();
-        HeadFontDesigner headerStyle = new HeadFontDesigner();
-        String[] columnHeadingsManagers = {"ID", "First Name", "Last Name", "Number Of Sellers", "Country"};
-        String[] columnHeadingsSellers = {"ID", "First Name", "Last Name", "City", "Average Sales", "Active"};
-
         if (!employees.isEmpty() && employees.get(0) instanceof Manager) {
             try (FileOutputStream fileOutput = new FileOutputStream("NewFile2.xls");) {
                 design.design(sheet);
