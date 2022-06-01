@@ -12,7 +12,7 @@ public class JsonExporter implements Exporter {
     @Override
     public void export(List<Employee> employees)  throws IOException {
         String json = new Gson().toJson(employees);
-        try (FileWriter file = new FileWriter(FILEPATH);) {
+        try (FileWriter file = new FileWriter(FILEPATH)) {
             file.write(json);
         }
     }
